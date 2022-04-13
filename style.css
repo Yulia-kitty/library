@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Permanent+Marker&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 21px;
+}
+
+header {
+    height: 16vh;
+    background-color: white;
+    font-size: 55px;
+    line-height: 15vh;
+    letter-spacing: 1px;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+
+button{
+    font: inherit;
+    border: none;
+    border-radius: 15px;
+}
+
+p{
+    margin: 0;
+}
+
+.addBook{
+    width: 180px;
+    background-color: transparent;
+    margin: 30px auto 22px auto;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.872);
+    padding: 8px 16px 10px 16px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgba(166, 165, 165, 0.434);
+}
+
+.container button{
+    padding: 14px;
+    width: 100%;
+}
+
+.true, .submit{
+    background-color: rgba(0, 255, 0, 0.384);
+}
+
+.true:hover, .submit:hover{
+    background-color: lime;
+}
+
+.false{
+    background-color: rgba(255, 0, 0, 0.42);
+}
+
+.false:hover{
+    background-color: #ff5c33;
+}
+
+.container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 93vw;
+    padding: 8px;
+    border-radius: 15px;
+    gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+
+.container div {
+    padding: 18px;
+    border-radius: 15px;
+    background-color: white;
+    display: grid;
+    gap: 18px;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.388);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+form{
+    border-radius: 15px;
+    width: 290px;
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+    background-color: #f5f0f5;
+    position: absolute;
+    top: 18vh;
+    left: 50%;
+    transform: scale(0, 0);
+}
+
+.active form{
+    transform: translate(-50%, 0) scale(1, 1);
+}
+
+form p{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+label{
+    font: inherit;
+    font-size: 22px;
+}
+
+input{
+    border: none;
+    font: inherit;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+#isRead{
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    left: 5px;
+    position: relative;
+}
+
+.submit{
+    border-radius: 30px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    font-size: 23px;
+}
+
+footer{
+    margin: 55px auto 14px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        My library
+    </header>
+    <main>
+        <button class="addBook">+ Add book</button>
+        <div class="container"></div>
+    </main>
+    <div class="modal">
+        <form action="#" method="post">
+            <p>Add new book</p>
+            <input type="text" placeholder="Title" required>
+            <input type="text" placeholder="Author" required>
+            <input type="number" placeholder="Pages" required> 
+            <div>
+                <label for="isRead">Have you read it?</label>
+                <input type="checkbox" id="isRead">
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        Inspired by the design idea of michalosman
+        <a href="https://github.com/michalosman"><img src="./images/github-icon.png" alt="Github" width="20px"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
